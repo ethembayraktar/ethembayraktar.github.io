@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETO</title>
+    <link rel="shortcut icon" href="fly.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="script2.js">
+ 
+</head>
+<body>
+    
+    
+    <nav>
+    
+    <ul class="sidebar">
+        
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="mid.html">HOME</a></li>
+        <li><a href="cat.html">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cont.html">Contact</a></li>
+    </ul>
+
+    <ul>
+        <h3>ETO </h3>
+        <li class="hideOnMobile"><a href="mid.html">HOME</a></li>
+        <li  class="hideOnMobile"><a href="cat.html">Categories</a></li>
+        <li  class="hideOnMobile"><a href="about.html">About</a></li>
+        <li  class="hideOnMobile"><a href="cont.html">Contact</a></li>
+        <li onclick= showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+    </nav>
+
+    <form id="form">
+        <div class="name">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+        </div>
+        
+        <div class="email">
+            <input type="email" name="email" placeholder="Enter your mail" required>
+        </div>
+
+        <div class="phone number">
+            
+            <input type="text" name="number"  placeholder="Enter your phone number with 9 in front of it." required>
+        </div>
+
+        <div class="hours">
+            <select name="hours" required>
+                <option value="" selected disabled>Select Hours</option>
+                <option value="">8 am</option>
+                <option value="">9 am</option>
+                <option value="">10 am</option>
+                <option value="">11 am</option>
+                <option value="">12 pm</option>
+                <option value="">1 pm</option>
+                <option value="">2 pm</option>
+                <option value="">3 pm</option>
+                <option value="">4 pm</option>
+                <option value="">5 pm</option>
+                <option value="">6 pm</option>
+                <option value="">7 pm</option>
+                <option value="">8 pm</option>
+                <option value="">9 pm</option>
+                <option value="">10 pm</option>
+            </select>
+        </div>
+
+
+        
+        <select id="courseType" name="courseType" required>
+            <option value="" disabled selected>Course Type:</option>
+          </select>
+
+          <select name="city" id="city" required>
+            <option value="" disabled selected>City:</option>
+          </select>
+
+
+
+
+        <div class="locate">
+            <select name="locate" id="">
+                <option value=""selected disabled>How would you like to be located</option>
+                <option value="">via Phone</option>
+                <option value="">via Mail</option>
+        </div>
+
+
+
+
+
+        <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="" required>
+            <label for="checkbox" style="color: white;">I agree to the terms and conditions.</label>
+        </div>
+        
+        <div class="submit">
+            <a href="submit.html"><button type="submit" class>SUBMİT</button></a>
+          </div>
+
+          
+    </form>
+
+
+<script>
+    function showSidebar(){
+        const sidebar= document.querySelector('.sidebar') 
+        sidebar.style.display='flex'
+    }
+    function hideSidebar(){
+        const sidebar= document.querySelector('.sidebar') 
+        sidebar.style.display='none'
+    }
+    
+
+   
+</script>
+<script src="script2.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+nav ul{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.241);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+nav ul li{
+    margin-left: 4%;
+    
+}
+nav a{
+    color: rgb(2, 1, 1);
+    text-decoration: none;
+
+}
+nav{
+    background-color: rgb(8, 123, 143);
+    padding-top: 2%;
+    
+    
+    
+}
+body{
+    background-image:url(edu.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0%;
+
+    background-repeat: no-repeat;
+}
+
+
+#form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+  
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+nav h3{
+    position: absolute;
+    left: 0%;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+button{
+    width: 200px;
+    height: 20px;
+}
